@@ -1,0 +1,60 @@
+<div class="tool-panel">
+    <div class="tool-section">
+        <h3 class="tool-title">�G
+ </h3>
+        <div class="upload-area" id="uploadArea">
+            <input type="file" id="fileInput" accept="image/*" style="display: none;" multiple>
+            <div class="upload-placeholder">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <p>�����G0d</p>
+                <p class="upload-hint">/ JPG, PNG, WEBP <</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tool-section">
+        <h3 class="tool-title">�G��</h3>
+        <div class="image-preview" id="imagePreview">
+            <p class="preview-placeholder">*	��G</p>
+        </div>
+        <div class="image-info" id="imageInfo"></div>
+    </div>
+
+    <div class="tool-section">
+        <h3 class="tool-title">~�</h3>
+        <div class="tag-presets" id="tagPresets">
+            <p>�}-...</p>
+        </div>
+        <div class="tag-input-group">
+            <input type="text" id="customTag" placeholder="�e�I~" class="tag-input">
+            <button onclick="addCustomTag()" class="btn btn-primary">��</button>
+        </div>
+        <div class="selected-tags" id="selectedTags">
+            <p class="tags-placeholder">*	�~</p>
+        </div>
+    </div>
+
+    <div class="tool-section">
+        <h3 class="tool-title">��	y</h3>
+        <div class="export-options">
+            <label class="checkbox-label">
+                <input type="checkbox" id="exportJson" checked>
+                <span>��: JSON</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" id="exportTxt" checked>
+                <span>��: TXT</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" id="exportCsv">
+                <span>��: CSV</span>
+            </label>
+        </div>
+        <button onclick="exportTags()" class="btn btn-success btn-block">��~</button>
+        <button onclick="saveTags()" class="btn btn-primary btn-block">�X0pn�</button>
+    </div>
+</div>

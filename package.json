@@ -1,0 +1,18 @@
+{
+  "name": "lora-tagger",
+  "version": "1.0.0",
+  "description": "训练Lora的素材图片打标工具",
+  "main": "Index.html",
+  "scripts": {
+    "start": "python3 Server.py",
+    "build": "echo 'Build completed successfully'"
+  },
+  "keywords": [
+    "lora",
+    "tagging",
+    "image",
+    "annotation"
+  ],
+  "author": "",
+  "license": "MIT"
+}
